@@ -1,0 +1,32 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Controller",
+            "request": "launch",
+            "mainClass": "com.ulto.app.Controller",
+            "projectName": "8-queens"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - CalendarExample",
+            "request": "launch",
+            "mainClass": "com.ulto.app.CalendarExample",
+            "projectName": "8-queens"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - NQueensSolver",
+            "request": "launch",
+            "mainClass": "com.ulto.app.NQueensSolver",
+            "projectName": "8-queens"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - App",
+            "request": "launch",
+            "mainClass": "com.ulto.app.App",
+            "projectName": "8-queens"
+        }
+    ]
+}

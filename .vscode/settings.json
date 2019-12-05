@@ -1,0 +1,10 @@
+{
+    "java.configuration.updateBuildConfiguration": "interactive",
+    "files.exclude": {
+        "**/.classpath": true,
+        "**/.factorypath": true,
+        "**/.project": true,
+        "**/.settings": true,
+        "target": true
+    }
+}

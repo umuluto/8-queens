@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<fx:root maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" type="BorderPane" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <center>
+      <StackPane prefHeight="150.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Canvas fx:id="boardCanvas" height="600.0" width="600.0" />
+            <Canvas fx:id="queenCanvas" height="600.0" width="600.0" />
+         </children>
+      </StackPane>
+   </center>
+   <left>
+      <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+         <children>
+            <VBox spacing="7.0">
+               <children>
+                  <Label text="Board size:" />
+                  <HBox spacing="7.0">
+                     <children>
+                        <TextField fx:id="boardSize" prefHeight="25.0" prefWidth="134.0" HBox.hgrow="ALWAYS" />
+                        <Button fx:id="startButton" mnemonicParsing="false" prefHeight="25.0" prefWidth="154.0" text="Start" HBox.hgrow="ALWAYS" />
+                     </children>
+                  </HBox>
+                  <Label text="Delay:" />
+                  <Slider fx:id="slider" max="2000.0" showTickLabels="true" value="500.0" />
+                  <Button fx:id="pauseButton" mnemonicParsing="false" text="Pause/Resume" />
+                  <Label text="Solutions found:" />
+               </children>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </VBox>
+            <ScrollPane fitToWidth="true" minWidth="150.0" VBox.vgrow="ALWAYS">
+               <content>
+                  <VBox fx:id="solutionsList" alignment="TOP_CENTER" />
+               </content>
+            </ScrollPane>
+         </children>
+      </VBox>
+   </left>
+</fx:root>
